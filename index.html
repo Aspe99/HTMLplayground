@@ -2,9 +2,66 @@
 
 <html>
     <head>
+        <style>
+            /* 1. Target the entire page background and text font */
+            body {
+                background-color: black;
+                color: white;
+                /* Arial is clean and modern, sans-serif is the backup */
+                font-family: Arial, Helvetica, sans-serif; 
+                margin: 40px; /* Adds a clean breathing-room margin around your text */
+            }
+
+            /* 2. Style our hyperlinks so they aren't that default bright blue */
+            a {
+                color: #4da6ff; /* A lighter blue that looks great on a black background */
+                text-decoration: none; /* Removes the default ugly underline */
+            }
+
+            /* 3. Make the links underline only when you hover your mouse over them */
+            a:hover {
+                text-decoration: underline;
+            }
+
+            /* 4. Let's add a subtle visual boundary for our header and footer */
+            header {
+                border-bottom: 1px solid #333; /* Dark gray line below header */
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+            }
+
+            footer {
+                border-top: 1px solid #333; /* Dark gray line above footer */
+                padding-top: 10px;
+                margin-top: 40px;
+                font-size: 0.8rem; /* Makes footer text slightly smaller */
+                color: #888; /* Dims the footer text slightly */
+            }
+        </style>
+
+
+
+
         <title>This is my first attempt!</title>
     </head>
     <body>
-        <p>This is an example test to see how things work out. Lets test out the <strong>strong</strong> tag.</p>
+
+        <header>
+            <p>This website is under development, and is for my learning. <strong>Enjoy!</strong></p>
+        </header>
+
+        <main>
+        <h1>Take a look at some cool hyperlinks below!</h1>
+        <ul>
+            <li><a href='https://www.youtube.com/watch?v=75x6DncZDgI'>Take a listen to some Chopin!</a></li>
+            <li><a href= 'https://www.youtube.com/watch?v=cIxGUAnj46U'>Or how about some Lizst!</a></li>
+
+            <li>This next link will open in a new tab, due to the ' target="_blank" ' that I have in my code!<a href= 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank'> Relax with some music!</a></li>
+        </ul>
+        </main>
+
+        <footer>
+            <p>Project tracked via GitHub - 2026</p>
+        </footer>
     </body>
 </html> 

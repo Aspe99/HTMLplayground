@@ -1,0 +1,31 @@
+/* --- Global Styles --- */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 40px;
+}
+
+/* --- Navigation & Links --- */
+a {
+    color: #4da6ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- Layout Sections --- */
+header {
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #888;
+}

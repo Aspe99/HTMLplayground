@@ -29,3 +29,15 @@ footer {
     font-size: 0.8rem;
     color: #888;
 }
+
+/* --- Mobile Styles --- */
+@media screen and (max-width: 600px) {
+    body {
+        margin: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

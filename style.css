@@ -30,15 +30,20 @@ footer {
     color: #888;
 }
 
-/* --- Mobile Styles --- */
+/* --- Navigation Layout (Desktop) --- */
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* --- Mobile Styles (Exceptions) --- */
 @media screen and (max-width: 600px) {
     body {
         margin: 15px;
     }
 
     header nav {
-        display: flex;
-        gap: 10px;
+        gap: 10px; /* Smaller gap on mobile */
     }
 
     header nav a {
@@ -46,7 +51,7 @@ footer {
     }
 }
 
-/*Fade in aniation.*/
+/* --- Animations --- */
 @keyframes fadeInZoom {
     0% {
         opacity: 0;
@@ -58,22 +63,6 @@ footer {
     }
 }
 
-/*Apply animation to home page*/
 .home-page {
     animation: fadeInZoom 1s ease-out;
-}
-
-/*Other stuff*/
-header nav {
-    display: flex;
-    gap: 20px;
-}
-
-@media screen and (max-width: 600px) {
-    header nav {
-        gap: 10px;
-    }
-    header nav a {
-        font-size: 0.9rem;
-    }
 }
